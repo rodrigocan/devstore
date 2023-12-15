@@ -3,10 +3,6 @@ import { Product } from "@/data/types/product"
 import Image from "next/image"
 import Link from "next/link"
 
-/**
- * Cache & Memoization
- */
-
 async function getFeaturedProducts(): Promise<Product[]> {
   const response = await api("/products/featured", {
     next: {
